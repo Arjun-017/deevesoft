@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --dark-color: rgb(94, 0, 94);
+  --light-color: rgb(185, 153, 214);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {
+  background-color: var(--light-color);
+  height: 50px;
+  padding: 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+nav .logo {
+  position: absolute;
+  padding: 2px 0;
+  color: var(--dark-color);
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+nav h1 {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+form {
+  width: min(90%, 600px);
+  margin: 100px auto;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 20px;
+  box-shadow: 0 0 5px 1px grey;
+}
+form h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+form div {
+  width: 100%;
+  margin: 10px auto;
+}
+form div label {
+  font-size: 1.1rem;
+}
+
+form div input {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  padding: 0px 10px;
+  text-align: center;
+  float: right;
+}
+
+form #submit-button {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: var(--dark-color);
+  border: none;
+  padding: 10px 0px;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+form #submit-button:hover {
+  opacity: 0.5;
+  transition: 250ms;
+}
+
+.message {
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: green;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.error {
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  color: red;
+  text-align: center;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(
+    45deg,
+    var(--light-color) -50%,
+    var(--dark-color) 100%
+  );
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 20px 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .logo {
+    font-size: 1rem;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  form div input {
+    width: 200px;
+    font-size: 0.85rem;
+  }
+  form div label {
+    font-size: 0.85rem;
+  }
+  form #submit-button {
+    font-size: 0.9rem;
+  }
+  .message {
+    font-size: 0.7rem;
+  }
+  .error {
+    font-size: 0.7rem;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  nav {
+    height: 40px;
+  }
+  nav .logo {
+    font-size: 0.8rem;
+  }
+  nav h1 {
+    font-size: 1.2rem;
+  }
+  form {
+    padding: 20px 10px;
+  }
+  form h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  form div input {
+    width: 175px;
+    font-size: 0.75rem;
+  }
+  form div label {
+    font-size: 0.85rem;
+  }
+  form #submit-button {
+    font-size: 0.9rem;
+    padding: 5px;
+    font-size: 0.85rem;
+  }
+
+  .message {
+    font-size: 0.6rem;
+  }
+  .error {
+    font-size: 0.6rem;
+  }
+  footer p {
+    font-size: 0.75rem;
+  }
+}
